@@ -1,0 +1,46 @@
+How to install and run it
+Open the Visual Basic Editor: Press ALT + F11 
+on your keyboard.
+
+Insert a Module: Go to Insert > Module.
+
+
+Paste the Code: Copy the code above and paste it into the white window.
+
+Run the Macro:
+
+Press F5 while inside the code, OR 
+
+Go back to your Excel sheet, press ALT + F8, select IncrementUntilMatch, and click Run.
+
+
+Sub MarketLoop()
+    Dim ws As Worksheet
+    Set ws = ThisWorkbook.ActiveSheet
+    
+    ' Set initial value of D6 starting from H10
+    ws.Range("D6").Value = ws.Range("H10").Value
+    
+    ' Scenario 1: BID (Incrementing)
+    If ws.Range("I2").Value = "BID" Then
+        Do Until ws.Range("G14").Value >= ws.Range("H10").Value
+            ws.Range("D6").Value = ws.Range("D6").Value + 1
+            DoEvents ' Keeps Excel responsive
+            
+            ' Safety Exit
+            If ws.Range("D6").Value > ws.Range("H10").Value + 500000 Then Exit Do
+        Loop
+
+    ' Scenario 2: ASK (Decrementing)
+    ElseIf ws.Range("I2").Value = "ASK" Then
+        Do Until ws.Range("G14").Value <= ws.Range("H10").Value
+            ws.Range("D6").Value = ws.Range("D6").Value - 1
+            DoEvents
+            
+            ' Safety Exit
+            If ws.Range("D6").Value < ws.Range("H10").Value - 500000 Then Exit Do
+        Loop
+    End If
+    
+    MsgBox "Loop Complete for " & ws.Range("I2").Value
+End Sub
