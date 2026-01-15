@@ -22,7 +22,7 @@ Sub MarketLoop()
     ws.Range("D6").Value = ws.Range("H10").Value
     
     ' Scenario 1: BID (Incrementing)
-    If ws.Range("I2").Value = "BID" Then
+    If ws.Range("C2").Value = "L" Then
         Do Until ws.Range("G14").Value >= ws.Range("H10").Value
             ws.Range("D6").Value = ws.Range("D6").Value + 1
             DoEvents ' Keeps Excel responsive
@@ -32,7 +32,7 @@ Sub MarketLoop()
         Loop
 
     ' Scenario 2: ASK (Decrementing)
-    ElseIf ws.Range("I2").Value = "ASK" Then
+    ElseIf ws.Range("C2").Value = "P" Then
         Do Until ws.Range("G14").Value <= ws.Range("H10").Value
             ws.Range("D6").Value = ws.Range("D6").Value - 1
             DoEvents
@@ -44,3 +44,4 @@ Sub MarketLoop()
     
     MsgBox "Loop Complete for " & ws.Range("I2").Value
 End Sub
+
