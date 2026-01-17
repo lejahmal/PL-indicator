@@ -16,25 +16,42 @@ Go back to your Excel sheet, press ALT + F8, select IncrementUntilMatch, and cli
 
 Sub MarketLoop()
     Dim ws As Worksheet
+    Dim stepSize As Double
     Set ws = ThisWorkbook.ActiveSheet
     
     ' Set initial value of D6 starting from H10
     ws.Range("D6").Value = ws.Range("H10").Value
     
-    ' Scenario 1: BID (Incrementing)
+    ' Scenario 1: L (Incrementing)
     If ws.Range("C2").Value = "L" Then
         Do Until ws.Range("G14").Value >= ws.Range("H10").Value
-            ws.Range("D6").Value = ws.Range("D6").Value + 1
-            DoEvents ' Keeps Excel responsive
+            ' --- New Step Size Condition ---
+            If ws.Range("D6").Value < 100 Then
+                stepSize = 0.1
+            Else
+                stepSize = 1
+            End If
+            ' -------------------------------
             
-            ' Safety Exit
+            ws.Range("D6").Value = ws.Range("D6").Value + stepSize
+            DoEvents
+            
+            ' Safety Exit (adjusted for potential high iterations)
             If ws.Range("D6").Value > ws.Range("H10").Value + 500000 Then Exit Do
         Loop
 
-    ' Scenario 2: ASK (Decrementing)
+    ' Scenario 2: P (Decrementing)
     ElseIf ws.Range("C2").Value = "P" Then
         Do Until ws.Range("G14").Value <= ws.Range("H10").Value
-            ws.Range("D6").Value = ws.Range("D6").Value - 1
+            ' --- New Step Size Condition ---
+            If ws.Range("D6").Value < 100 Then
+                stepSize = 0.1
+            Else
+                stepSize = 1
+            End If
+            ' -------------------------------
+            
+            ws.Range("D6").Value = ws.Range("D6").Value - stepSize
             DoEvents
             
             ' Safety Exit
@@ -42,6 +59,7 @@ Sub MarketLoop()
         Loop
     End If
     
-    MsgBox "Loop Complete for " & ws.Range("I2").Value
+    MsgBox "Loop Complete for " & ws.Range("C2").Value
 End Sub
+
 
