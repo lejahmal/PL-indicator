@@ -1,2 +1,2 @@
 # PL-indicator
-find README in .xls file sheet
+find README in PRICE LEVEL INDICATOR.xlsx file sheet
