@@ -1,2 +1,2 @@
 # PL-indicator
-PL indicator examples from ORDERVIEW app 
+find README in .xls file sheet
