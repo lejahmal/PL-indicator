@@ -50,7 +50,7 @@ HOW TO MANAGE RISK
 
 AOPV (Average orderbook price volatility) who is the spread between the two AOP values
 STOP LOSS to mage risk in efficient way while using predicted orderbook can be done in 3 way 
-      •	If you want to take the less risky remove AOPV spread to order price in case of buy or add or to order price in case of sell 
-      •	If you want to take an average risk SL with the sum of price that directly border your order price plus your AOPV
-      •	If you want to take the high risk in case of very volatile asset, SL with the sum of two price upper your order price in case 
-            of sell or two level price lower plus AOPV
+      •If you want to take the less risky remove AOPV spread to order price in case of buy or add or to order price in case of sell 
+      •If you want to take an average risk SL with the sum of price that directly border your order price plus your AOPV
+      •If you want to take the high risk in case of very volatile asset, SL with the sum of two price upper your order price in case 
+       of sell or two level price lower plus AOPV
