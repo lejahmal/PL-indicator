@@ -15,16 +15,16 @@ AFTER COMPLETED FILTERS FROM STEP 1 TO STEP 9
 
 READ PREDICTED ORDERBOOK THIS WAY
 
-            ORDERBOOK is divided in three sections
+      ORDERBOOK is divided in three sections
       •	Section 1 between Go price and AOP3 
       •	Section 2 between AOP3 and AOP4 
       •	Section 3 between AOP4 and corresponding price
 
-            Every section contains two ranges price 
+      Every section contains two ranges price 
       •	Section range itself 
       •	Tension range (intra section part between the RED PRICE color around BALANCE PRICE and BORDER PRICE) 
 
-            Every AOP have two price 
+      Every AOP have two price 
       •	The more great is the average price to use in case of sell 
       •	The less great is the average price to use in case of buy
 
