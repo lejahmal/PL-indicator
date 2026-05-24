@@ -54,8 +54,8 @@ HOW TO MANAGE RISK
       You can manage risk efficiently using predicted orderbook in 3 ways:
       •    Low Risk
            Subtract the AOPV spread from your order price (for buy orders) or add it to your order price (for sell orders).
-      •   Medium Risk
-          Set the stop loss at the sum of the price that directly borders your order price plus your AOPV.
+      •    Medium Risk
+           Set the stop loss at the sum of the price that directly borders your order price plus your AOPV.
       •    High Risk
-          (For very volatile assets) Set the stop loss at the sum of two price levels above your order price (for sell orders) or two 
-          price levels below your order price plus AOPV (for buy orders).
+           (For very volatile assets) Set the stop loss at the sum of two price levels above your order price (for sell orders) or two 
+           price levels below your order price plus AOPV (for buy orders).
