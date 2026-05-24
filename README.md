@@ -45,9 +45,7 @@ HOW TO OPEN TRADE
          target VOLATILITY PRICE in the following trend 
 
 
-
 HOW TO MANAGE RISK 
-
 AOPV (Average orderbook price volatility) who is the spread between the two AOP values
 STOP LOSS to mage risk in efficient way while using predicted orderbook can be done in 3 way 
       •If you want to take the less risky remove AOPV spread to order price in case of buy or add or to order price in case of sell 
