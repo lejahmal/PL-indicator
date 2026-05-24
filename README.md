@@ -4,8 +4,13 @@
 
 AFTER COMPLETED FILTERS FROM STEP 1 TO STEP 9 
 
-•	For automatic process Go to DISPLAY > MACROS > MATRICE > Execute. The matrix will loop through LINE 2 PARAMS     until MARKER equals PIVOT (the PIVOT is the value from step 5; in standard cases, it's always O+, but you can use another matrix point as the PIVOT in advanced studies). The ERROR MARGIN is the difference between MARKER and PIVOT. When it reaches zero, step 7 will display STATIC.
-For manual process manually change the value of LINE 2 PARAMS and verify that MARKER equals PIVOT. When step 7 shows STATIC, the process is complete. Then, start reading the order book price. (For manual processes, an ERROR MARGIN of around 0.01 is acceptable.)
+•	**For automatic process** Go to DISPLAY > MACROS > MATRICE > Execute. The matrix will loop through LINE 2 PARAMS     until MARKER 
+      equals PIVOT (the PIVOT is the value from step 5; in standard cases, it's always O+, but you can use another matrix point as the 
+      PIVOT in advanced studies). The ERROR MARGIN is the difference between MARKER and PIVOT. When it reaches zero, step 7 will display 
+      STATIC.
+      **For manual process** manually change the value of LINE 2 PARAMS and verify that MARKER equals PIVOT. When step 7 shows STATIC, 
+      the process is complete. Then, start reading the order book price. (For manual processes, an ERROR MARGIN of around 0.01 is 
+      acceptable.)
 
 •	# Move the $ symbol cursor price along the vertical line to the price closest to the asset's current price on the date of the study.
 
