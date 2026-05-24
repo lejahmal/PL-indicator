@@ -15,16 +15,16 @@ AFTER COMPLETED FILTERS FROM STEP 1 TO STEP 9
 
 READ PREDICTED ORDERBOOK THIS WAY
 
-ORDERBOOK is divided in three sections
+            ORDERBOOK is divided in three sections
       •	Section 1 between Go price and AOP3 
       •	Section 2 between AOP3 and AOP4 
       •	Section 3 between AOP4 and corresponding price
 
-Every section contains two ranges price 
+            Every section contains two ranges price 
       •	Section range itself 
       •	Tension range (intra section part between the RED PRICE color around BALANCE PRICE and BORDER PRICE) 
 
-Every AOP have two price 
+            Every AOP have two price 
       •	The more great is the average price to use in case of sell 
       •	The less great is the average price to use in case of buy
 
@@ -46,8 +46,8 @@ HOW TO OPEN TRADE
 
 
 HOW TO MANAGE RISK 
-AOPV (Average orderbook price volatility) who is the spread between the two AOP values
-STOP LOSS to mage risk in efficient way while using predicted orderbook can be done in 3 way 
+      AOPV (Average orderbook price volatility) who is the spread between the two AOP values
+      STOP LOSS to mage risk in efficient way while using predicted orderbook can be done in 3 way 
       •If you want to take the less risky remove AOPV spread to order price in case of buy or add or to order price in case of sell 
       •If you want to take an average risk SL with the sum of price that directly border your order price plus your AOPV
       •If you want to take the high risk in case of very volatile asset, SL with the sum of two price upper your order price in case 
