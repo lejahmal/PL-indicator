@@ -33,7 +33,7 @@ HOW TO OPEN TRADE
       •	CURSOR PRICE IN SECTION 1
         After placing the cursor price, find the tension range and check if the asset has ranged at least once within it. If yes, use the 
         red price or border price as your next order entry in the following trend. If no, enter at the volatility price (this indicates 
-        the price will move into the section range itsef).
+        the price will move into the section range itself).
 
       •	CURSOR PRICE IN SECTION 2
         Check if the price has ranged at least once within the tension range. If yes, use the red price or border price as your next 
