@@ -1,5 +1,7 @@
 <img width="1112" height="747" alt="PL tutorial" src="https://github.com/user-attachments/assets/0b964f0e-f77f-47c4-b3d7-087a7fd10106" />
 
+# STANDARD STUDY CASE
+
 AFTER COMPLETED FILTERS FROM STEP 1 TO STEP 9 
 
       •	For automatic process Go to DISPLAY > MACROS > MATRICE > Execute. The matrix will loop through LINE 2 PARAMS until MARKER 
