@@ -46,15 +46,15 @@ HOW TO OPEN TRADE
 case 1 : If LOWER RANGE = BALANCE PRICE      buy  BALANCE PRICE target RED PRICE
 case 2 : If UPPER RANGE = BALANCE PRICE      sell BALANCE PRICE target RED PRICE
     
-  • CURSOR PRICE IN UPPER SECTION 
+  •	CURSOR PRICE IN UPPER SECTION 
     If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell volatility price target AOP 
     If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy AOP price volatility   
 
-  • CURSOR PRICE IN MIDDLE SECTION 
+  •	CURSOR PRICE IN MIDDLE SECTION 
     If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell AOP price target middle AOP 
     If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy middle AOP target  AOP price  
 
-  • CURSOR PRICE IN LOWER SECTION 
+  •	CURSOR PRICE IN LOWER SECTION 
     If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell middle AOP  target volatility 
 
 
