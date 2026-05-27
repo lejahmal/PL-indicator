@@ -87,5 +87,4 @@ THE RANGE IS CONTAINED IN A SINGLE SECTION
      •	MEDIUM RISK set the stop loss at the sum of the price that directly borders your order price plus your AOPV.
      •	HIGH RISK (For very volatile assets) Set the stop loss at the sum of two price levels above your order price (for sell orders) 
          or two price levels below your order price plus AOPV
-
 ---         
