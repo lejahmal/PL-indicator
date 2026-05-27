@@ -43,8 +43,8 @@ Choose your execution method:
 ### Average Order Book Price (AOP)
 
 Each AOP has two prices:
-- **AOP:** Upper price (L11) for selling, Lower price (M11) for buying
-- **Middle AOP:** Upper price (M18) for selling, Lower price (M19) for buying
+     •	AOP : Upper price (L11) for selling, Lower price (M11) for buying
+     •	Middle AOP : Upper price (M18) for selling, Lower price (M19) for buying
 
 ---
 
