@@ -32,7 +32,7 @@ Choose your execution method:
 
 The order book is divided into three sections:
 
-| Section | Range | Reference |
+| Section | Range | cell |
 |---------|-------|-----------|
 | **Upper** | Upper price to AOP | L4-L12 |
 | **Middle** | Middle AOP to AOP | M12-M19 |
