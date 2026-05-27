@@ -59,6 +59,7 @@ Each AOP has two prices:
 4. **Compare to balance price** – check if the range is above or below the BALANCE PRICE
 
 ### Trading Rules by Position
+THE RANGE IS CONTAINED IN A SINGLE SECTION
 
 **If Range Approximativly Equals Balance Price:**
 - **Case 1:** LOWER RANGE = BALANCE PRICE → Buy at BALANCE PRICE, target RED PRICE
@@ -78,7 +79,7 @@ Each AOP has two prices:
 
 ---
 
-## How to Risk Management
+## How to Manage Risk
 
 **AOPV (Average Order Book Price Volatility)** is the spread between the two AOP values. Use it to manage risk:
 
