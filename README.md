@@ -36,7 +36,7 @@ The order book is divided into three sections:
 |---------|-------|-----------|
 | **Upper** | Upper price to AOP | L4-L12 |
 | **Middle** | Middle AOP to AOP | M12-M19 |
-| **Lower** | Lower to middle AOP | M18-M27 |
+| **Lower** | Lower price to middle AOP | M18-M27 |
 
 ### Sub-Ranges and Significant Prices
 
