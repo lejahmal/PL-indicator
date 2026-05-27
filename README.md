@@ -15,39 +15,47 @@ AFTER COMPLETED FILTERS FROM STEP 1 TO STEP 9
              study.
 
 
+
 READ PREDICTED ORDERBOOK THIS WAY
 
-      ORDERBOOK is divided in three sections
-      •	Section 1 between Go price and AOP3 
-      •	Section 2 between AOP3 and AOP4 
-      •	Section 3 between AOP4 and corresponding price
+  ORDERBOOK is divided in three sections
+  •	UPPER SECTION between upper price and AOP   L4-L12
+  •	MIDDLE SECTION between middle AOP and AOP   M12-M19
+  •	LOWER SECTION  lower and middlle AOP        M18-M27
 
-      Every section contains two ranges price 
-      •	Section range itself 
-      •	Tension range (intra section part between the RED PRICE color around BALANCE PRICE and BORDER PRICE) 
+  Every section contains ONE sub-range WITH THREE SIGNIFICANT PRICES
+  •	SUB UPPER SECTION  L8-L11  (RED PRICE = L8  ; BALANCE PRICE = L10 ; BORDER PRICE = L11 )
+  •	SUB MIDDLE SECTION M14-M17 (RED PRICE = M14 ; BALANCE PRICE = M16 ; BORDER PRICE = M17 )
+  •	SUB LOWER SECTION  M20-M23 (RED PRICE = M23 ; BALANCE PRICE = M21 ; BORDER PRICE = M20 )
 
-      Every AOP have two price 
-      •	The higher average price is used for selling
-      •	The lower average price is used for buying
 
+  Every AOP'S have two prices 
+  •	AOP          The higher average price L11 is used for selling The lower average price M11 is used for buying
+  •	MIDDLE AOP   The higher average price M18 is used for selling The lower average price M19 is used for buying
+    
+    
 HOW TO OPEN TRADE
+    
+ 1-Get the CURSOR price of the asset ( SYMBOL $ CELL )
+ 2-Find the price section by iterating through the price matrix ( SYMBOL $ CELL )
+ 3-Get the highest price UPPER RANGE and the lowest price LOWER RANGE after the PIVOT price H10.
+ 4-Check if the Range is above or below the BALANCE price
 
-      •	CURSOR PRICE IN SECTION 1
-        After placing the cursor price, find the tension range and check if the asset has ranged at least once within it. If yes, use the 
-        red price or border price as your next order entry in the following trend. If no, enter at the volatility price (this indicates 
-        the price will move into the section range itself).
+    THE RANGE IS CONTAINED IN A SINGLE SECTION
 
-      •	CURSOR PRICE IN SECTION 2
-        Check if the price has ranged at least once within the tension range. If yes, use the red price or border price as your next 
-        order entry in the following trend. If no, use:
-        The lower AOP to buy in the following trend, or
-        The higher AOP to sell in the following trend
+case 1 : If LOWER RANGE = BALANCE PRICE      buy  BALANCE PRICE target RED PRICE
+case 2 : If UPPER RANGE = BALANCE PRICE      sell BALANCE PRICE target RED PRICE
+    
+  • CURSOR PRICE IN UPPER SECTION 
+    If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell volatility price target AOP 
+    If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy AOP price volatility   
 
-      •	CURSOR PRICE IN SECTION 3
-        Check if the price has ranged at least once within the tension range. If yes, use the red price or border price as your next 
-        order entry in the following trend. If no, use:
-        The lower AOP to buy with a target of the next higher AOP4 in the following trend, or
-        The higher AOP to sell with a target of the volatility price in the following trend
+  • CURSOR PRICE IN MIDDLE SECTION 
+    If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell AOP price target middle AOP 
+    If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy middle AOP target  AOP price  
+
+  • CURSOR PRICE IN LOWER SECTION 
+    If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell middle AOP  target volatility 
 
 
 HOW TO MANAGE RISK 
