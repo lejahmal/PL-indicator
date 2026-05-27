@@ -1,4 +1,4 @@
-<img width="990" height="659" alt="SCREEN" src="https://github.com/user-attachments/assets/48697ce3-8518-45c9-83b4-01f23b8fdb9a" />
+<img width="996" height="667" alt="CAPTURE" src="https://github.com/user-attachments/assets/a5fccb86-ad4b-468f-a05f-015028631171" />
 
 # Standard Study Case
 
