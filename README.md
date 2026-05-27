@@ -26,7 +26,7 @@ Choose your execution method:
 
 ---
 
-## Reading the Predicted Order Book
+## How to Read the Predicted Order Book
 
 ### Order Book Sections
 
@@ -95,7 +95,7 @@ Each AOP has two prices:
 
 ---
 
-## Risk Management
+## How to Risk Management
 
 **AOPV (Average Order Book Price Volatility)** is the spread between the two AOP values. Use it to manage risk:
 
