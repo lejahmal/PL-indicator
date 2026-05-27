@@ -40,7 +40,7 @@ Choose your execution method:
      •	SUB MIDDLE SECTION [M14-M17] (RED PRICE = M14 ; BALANCE PRICE = M16 ; BORDER PRICE = M17 )
      •	SUB LOWER SECTION  [M20-M23] (RED PRICE = M23 ; BALANCE PRICE = M21 ; BORDER PRICE = M20 )
 
-### Average OrderBook Price (AOP)
+### Average Orderbook Price (AOP)
 
      Each AOP has two prices:
      •	AOP : Upper price (L11) for selling, Lower price (M11) for buying
@@ -90,7 +90,7 @@ Choose your execution method:
 
 ## How to Manage Risk
 
-**AOPV (Average Order Book Price Volatility)** is the spread between the two AOP values. Use it to manage risk:
+**AOPV (Average Orderbook Price Volatility)** is the spread between the two AOP values. Use it to manage risk:
 
      •	LOW RISK subtract the AOPV spread from your order price (for buy orders) or add it to your order price (for sell orders).
      •	MEDIUM RISK set the stop loss at the sum of the price that directly borders your order price plus your AOPV.
