@@ -83,8 +83,8 @@ Choose your execution method:
 
 **PRICE OSCILLATES ON EITHER SIDE OF THE BALANCE PRICE**  
 
-     •	CLOSE PRICE > BALANCE PRICE : BUY at balance price high section price
-     •	CLOSE PRICE < BALANCE PRICE : SELL at balance price target low section price  
+     •	CLOSE PRICE > BALANCE PRICE : BUY at balance price target Upper Range price
+     •	CLOSE PRICE < BALANCE PRICE : SELL at balance price target Low Range price  
 
 ---
 
