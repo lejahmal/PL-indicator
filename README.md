@@ -62,18 +62,22 @@ Each AOP has two prices:
 THE RANGE IS CONTAINED IN A SINGLE SECTION
 
 **TREND USED TO BREAK AT BALANCE PRICE**
+
  case 1 : If LOWER RANGE = BALANCE PRICE → Buy  BALANCE PRICE target RED PRICE
  case 2 : If UPPER RANGE = BALANCE PRICE → Sell BALANCE PRICE target RED PRICE
 
 **CURSOR PRICE IN UPPER SECTION** 
+
      •	RANGE > BALANCE PRICE : Check if Case 1 applies if not sell at volatility price target AOP 
      •	RANGE < BALANCE PRICE : check if case 2 applies if not buy at AOP price target volatility   
 
 **CURSOR PRICE IN MIDDLE SECTION** 
+
      •	RANGE > BALANCE PRICE : check if case 1 applies if not sell at AOP price target middle AOP 
      •	RANGE < BALANCE PRICE : check if case 2 applies if not buy at middle AOP target  AOP price  
 
 **CURSOR PRICE IN LOWER SECTION**
+
      •	RANGE > BALANCE PRICE : check if case 1 applies if not sell at middle AOP target volatility
      •	RANGE < BALANCE PRICE : check if case 2 applies if not buy at volatily price target middle AOP  
 
