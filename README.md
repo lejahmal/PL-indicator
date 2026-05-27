@@ -77,7 +77,7 @@ Each AOP has two prices:
 
 ### Trading Rules by Position
 
-**If Range Equals Balance Price:**
+**If Range Approximativly Equals Balance Price:**
 - **Case 1:** LOWER RANGE = BALANCE PRICE → Buy at BALANCE PRICE, target RED PRICE
 - **Case 2:** UPPER RANGE = BALANCE PRICE → Sell at BALANCE PRICE, target RED PRICE
 
