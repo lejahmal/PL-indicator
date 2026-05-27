@@ -55,7 +55,7 @@ Each AOP has two prices:
 
 1. **Get the cursor price** of your asset (SYMBOL $ CELL)
 2. **Find the price section** by locating your price in the matrix (SYMBOL $ CELL)
-3. **Identify the range** – find the highest price in the UPPER RANGE and the lowest price in the LOWER RANGE after the PIVOT price (H10)
+3. **Identify the range** – find the highest price (UPPER RANGE) and the lowest price (LOWER RANGE) after the PIVOT price (H10)
 4. **Compare to balance price** – check if the range is above or below the BALANCE PRICE
 
 ### Trading Rules by Position
