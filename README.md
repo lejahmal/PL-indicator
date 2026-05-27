@@ -61,19 +61,20 @@ Each AOP has two prices:
 ### Trading Rules by Position
 THE RANGE IS CONTAINED IN A SINGLE SECTION
 
-**If Range Approximativly Equals Balance Price:**
+**Support or Resistance Approximativly Equals Balance Price:**
 - **Case 1:** LOWER RANGE = BALANCE PRICE → Buy at BALANCE PRICE, target RED PRICE
 - **Case 2:** UPPER RANGE = BALANCE PRICE → Sell at BALANCE PRICE, target RED PRICE
 
-**If Price is in Upper Section:**
+
+ •	CURSOR PRICE IN UPPER SECTION 
 - Range > Balance Price → Check if Case 1 applies; if not, sell at volatility price, target AOP
 - Range < Balance Price → Check if Case 2 applies; if not, buy at AOP, target volatility price
 
-**If Price is in Middle Section:**
+ •	CURSOR PRICE IN MIDDLE SECTION
 - Range > Balance Price → Check if Case 1 applies; if not, sell at AOP, target middle AOP
 - Range < Balance Price → Check if Case 2 applies; if not, buy at middle AOP, target AOP
 
-**If Price is in Lower Section:**
+ •	CURSOR PRICE IN LOWER SECTION 
 - Range > Balance Price → Check if Case 1 applies; if not, sell at middle AOP, target volatility
 - Range < Balance Price → Check if Case 2 applies; if not, buy at volatility, target middle AOP
 
