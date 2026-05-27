@@ -81,6 +81,11 @@ Choose your execution method:
      •	RANGE > BALANCE PRICE : check if case 1 applies if not sell at middle AOP target volatility
      •	RANGE < BALANCE PRICE : check if case 2 applies if not buy at volatily price target middle AOP  
 
+**PRICE OSCILLATES ON EITHER SIDE OF THE BALANCE PRICE**  
+
+     •	CLOSE PRICE > BALANCE PRICE : BUY at balance price high section price
+     •	CLOSE PRICE < BALANCE PRICE : SELL at balance price target low section price  
+
 ---
 
 ## How to Manage Risk
