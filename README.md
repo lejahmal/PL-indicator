@@ -1,4 +1,4 @@
-<img width="1112" height="747" alt="PL tutorial" src="https://github.com/user-attachments/assets/0b964f0e-f77f-47c4-b3d7-087a7fd10106" />
+<img width="990" height="659" alt="SCREEN" src="https://github.com/user-attachments/assets/48697ce3-8518-45c9-83b4-01f23b8fdb9a" />
 
 # STANDARD STUDY CASE
 
