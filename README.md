@@ -51,32 +51,6 @@ Each AOP has two prices:
 
 ## How to Open a Trade
 
-
-Steps to Identify Entry Points
-Get the cursor price of your asset (SYMBOL $ CELL)
-Find the price section by locating your price in the matrix (SYMBOL $ CELL)
-Identify the range – find the highest price in the UPPER RANGE and the lowest price in the LOWER RANGE after the PIVOT price (H10)
-Compare to balance price – check if the range is above or below the BALANCE PRICE
-Trading Rules by Position
-THE RANGE IS CONTAINED IN A SINGLE SECTION
-
-If Range Approximativly Equals Balance Price:
-
-Case 1: LOWER RANGE = BALANCE PRICE → Buy at BALANCE PRICE, target RED PRICE
-Case 2: UPPER RANGE = BALANCE PRICE → Sell at BALANCE PRICE, target RED PRICE
-If Price is in Upper Section:
-
-Range > Balance Price → Check if Case 1 applies; if not, sell at volatility price, target AOP
-Range < Balance Price → Check if Case 2 applies; if not, buy at AOP, target volatility price
-If Price is in Middle Section:
-
-Range > Balance Price → Check if Case 1 applies; if not, sell at AOP, target middle AOP
-Range < Balance Price → Check if Case 2 applies; if not, buy at middle AOP, target AOP
-If Price is in Lower Section:
-
-Range > Balance Price → Check if Case 1 applies; if not, sell at middle AOP, target volatility
-Range < Balance Price → Check if Case 2 applies; if not, buy at volatility, target middle AOP
-
 ### Steps to Identify Entry Points
 
 1. **Get the cursor price** of your asset (SYMBOL $ CELL)
