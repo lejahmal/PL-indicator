@@ -65,15 +65,15 @@ Each AOP has two prices:
 - **Case 1:** LOWER RANGE = BALANCE PRICE → Buy at BALANCE PRICE, target RED PRICE
 - **Case 2:** UPPER RANGE = BALANCE PRICE → Sell at BALANCE PRICE, target RED PRICE
 
- **CURSOR PRICE IN UPPER SECTION**
+     CURSOR PRICE IN UPPER SECTION**
      •	  Range > Balance Price → Check if Case 1 applies; if not, sell at volatility price, target AOP
      •	  Range < Balance Price → Check if Case 2 applies; if not, buy at AOP, target volatility price
 
- **CURSOR PRICE IN MIDDLE SECTION**
+     CURSOR PRICE IN MIDDLE SECTION**
      •	  Range > Balance Price → Check if Case 1 applies; if not, sell at AOP, target middle AOP
      •	  Range < Balance Price → Check if Case 2 applies; if not, buy at middle AOP, target AOP
 
- **CURSOR PRICE IN LOWER SECTION** 
+     CURSOR PRICE IN LOWER SECTION** 
      •	  Range > Balance Price → Check if Case 1 applies; if not, sell at middle AOP, target volatility
      •	  Range < Balance Price → Check if Case 2 applies; if not, buy at volatility, target middle AOP
 
