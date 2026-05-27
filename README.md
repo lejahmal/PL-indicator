@@ -19,43 +19,43 @@ AFTER COMPLETED FILTERS FROM STEP 1 TO STEP 9
 READ PREDICTED ORDERBOOK THIS WAY
 
   ORDERBOOK is divided in three sections
-  •	UPPER SECTION between upper price and AOP   L4-L12
-  •	MIDDLE SECTION between middle AOP and AOP   M12-M19
-  •	LOWER SECTION  lower and middlle AOP        M18-M27
+      •	UPPER SECTION between upper price and AOP   L4-L12
+      •	MIDDLE SECTION between middle AOP and AOP   M12-M19
+      •	LOWER SECTION  lower and middlle AOP        M18-M27
 
   Every section contains ONE sub-range WITH THREE SIGNIFICANT PRICES
-  •	SUB UPPER SECTION  L8-L11  (RED PRICE = L8  ; BALANCE PRICE = L10 ; BORDER PRICE = L11 )
-  •	SUB MIDDLE SECTION M14-M17 (RED PRICE = M14 ; BALANCE PRICE = M16 ; BORDER PRICE = M17 )
-  •	SUB LOWER SECTION  M20-M23 (RED PRICE = M23 ; BALANCE PRICE = M21 ; BORDER PRICE = M20 )
+      •	SUB UPPER SECTION  L8-L11  (RED PRICE = L8  ; BALANCE PRICE = L10 ; BORDER PRICE = L11 )
+      •	SUB MIDDLE SECTION M14-M17 (RED PRICE = M14 ; BALANCE PRICE = M16 ; BORDER PRICE = M17 )
+      •	SUB LOWER SECTION  M20-M23 (RED PRICE = M23 ; BALANCE PRICE = M21 ; BORDER PRICE = M20 )
 
 
   Every AOP'S have two prices 
-  •	AOP          The higher average price L11 is used for selling The lower average price M11 is used for buying
-  •	MIDDLE AOP   The higher average price M18 is used for selling The lower average price M19 is used for buying
+     •	AOP          The higher average price L11 is used for selling The lower average price M11 is used for buying
+     •	MIDDLE AOP   The higher average price M18 is used for selling The lower average price M19 is used for buying
     
     
 HOW TO OPEN TRADE
     
- 1-Get the CURSOR price of the asset ( SYMBOL $ CELL )
- 2-Find the price section by iterating through the price matrix ( SYMBOL $ CELL )
- 3-Get the highest price UPPER RANGE and the lowest price LOWER RANGE after the PIVOT price H10.
- 4-Check if the Range is above or below the BALANCE price
+     1-Get the CURSOR price of the asset ( SYMBOL $ CELL )
+     2-Find the price section by iterating through the price matrix ( SYMBOL $ CELL )
+     3-Get the highest price UPPER RANGE and the lowest price LOWER RANGE after the PIVOT price H10.
+     4-Check if the Range is above or below the BALANCE price
 
     THE RANGE IS CONTAINED IN A SINGLE SECTION
 
-case 1 : If LOWER RANGE = BALANCE PRICE      buy  BALANCE PRICE target RED PRICE
-case 2 : If UPPER RANGE = BALANCE PRICE      sell BALANCE PRICE target RED PRICE
+     case 1 : If LOWER RANGE = BALANCE PRICE      buy  BALANCE PRICE target RED PRICE
+     case 2 : If UPPER RANGE = BALANCE PRICE      sell BALANCE PRICE target RED PRICE
     
-  •	CURSOR PRICE IN UPPER SECTION 
-    If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell volatility price target AOP 
-    If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy AOP price volatility   
+     •	CURSOR PRICE IN UPPER SECTION 
+            If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell volatility price target AOP 
+            If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy AOP price volatility   
 
-  •	CURSOR PRICE IN MIDDLE SECTION 
-    If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell AOP price target middle AOP 
-    If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy middle AOP target  AOP price  
+     •	CURSOR PRICE IN MIDDLE SECTION 
+            If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell AOP price target middle AOP 
+            If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy middle AOP target  AOP price  
 
-  •	CURSOR PRICE IN LOWER SECTION 
-    If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell middle AOP  target volatility 
+     •	CURSOR PRICE IN LOWER SECTION 
+            If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell middle AOP  target volatility 
 
 
 HOW TO MANAGE RISK 
