@@ -91,6 +91,7 @@ Choose your execution method:
 ## How to Manage Risk
 
 **AOPV (Average Order Book Price Volatility)** is the spread between the two AOP values. Use it to manage risk:**
+
      3 ways risk management 
      •	LOW RISK subtract the AOPV spread from your order price (for buy orders) or add it to your order price (for sell orders).
      •	MEDIUM RISK set the stop loss at the sum of the price that directly borders your order price plus your AOPV.
