@@ -30,15 +30,15 @@ Choose your execution method:
 
 ### Order Book Sections
 
-The order book is divided into three sections:
-  •	UPPER SECTION between upper price and AOP   L4-L12
-  •	MIDDLE SECTION between middle AOP and AOP   M12-M19
-  •	LOWER SECTION  lower and middlle AOP        M18-M27
+     The order book is divided into three sections:
+     •	UPPER SECTION between upper price and AOP   L4-L12
+     •	MIDDLE SECTION between middle AOP and AOP   M12-M19
+     •	LOWER SECTION  lower and middlle AOP        M18-M27
 
-  Every section contains ONE sub-range WITH THREE SIGNIFICANT PRICES
-  •	SUB UPPER SECTION  L8-L11  (RED PRICE = L8  ; BALANCE PRICE = L10 ; BORDER PRICE = L11 )
-  •	SUB MIDDLE SECTION M14-M17 (RED PRICE = M14 ; BALANCE PRICE = M16 ; BORDER PRICE = M17 )
-  •	SUB LOWER SECTION  M20-M23 (RED PRICE = M23 ; BALANCE PRICE = M21 ; BORDER PRICE = M20 )
+     Every section contains ONE sub-range WITH THREE SIGNIFICANT PRICES
+     •	SUB UPPER SECTION  L8-L11  (RED PRICE = L8  ; BALANCE PRICE = L10 ; BORDER PRICE = L11 )
+     •	SUB MIDDLE SECTION M14-M17 (RED PRICE = M14 ; BALANCE PRICE = M16 ; BORDER PRICE = M17 )
+     •	SUB LOWER SECTION  M20-M23 (RED PRICE = M23 ; BALANCE PRICE = M21 ; BORDER PRICE = M20 )
 
 ### Average Order Book Price (AOP)
 
