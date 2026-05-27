@@ -19,14 +19,14 @@ AFTER COMPLETED FILTERS FROM STEP 1 TO STEP 9
 READ PREDICTED ORDERBOOK THIS WAY
 
   ORDERBOOK is divided in three sections
-      •	UPPER SECTION between upper price and AOP   L4-L12
-      •	MIDDLE SECTION between middle AOP and AOP   M12-M19
-      •	LOWER SECTION  lower and middlle AOP        M18-M27
+           •	UPPER SECTION between upper price and AOP   L4-L12
+           •	MIDDLE SECTION between middle AOP and AOP   M12-M19
+           •	LOWER SECTION  lower and middlle AOP        M18-M27
 
   Every section contains ONE sub-range WITH THREE SIGNIFICANT PRICES
-      •	SUB UPPER SECTION  L8-L11  (RED PRICE = L8  ; BALANCE PRICE = L10 ; BORDER PRICE = L11 )
-      •	SUB MIDDLE SECTION M14-M17 (RED PRICE = M14 ; BALANCE PRICE = M16 ; BORDER PRICE = M17 )
-      •	SUB LOWER SECTION  M20-M23 (RED PRICE = M23 ; BALANCE PRICE = M21 ; BORDER PRICE = M20 )
+           •	SUB UPPER SECTION  L8-L11  (RED PRICE = L8  ; BALANCE PRICE = L10 ; BORDER PRICE = L11 )
+           •	SUB MIDDLE SECTION M14-M17 (RED PRICE = M14 ; BALANCE PRICE = M16 ; BORDER PRICE = M17 )
+           •	SUB LOWER SECTION  M20-M23 (RED PRICE = M23 ; BALANCE PRICE = M21 ; BORDER PRICE = M20 )
 
 
   Every AOP'S have two prices 
@@ -55,7 +55,8 @@ HOW TO OPEN TRADE
             If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy middle AOP target  AOP price  
 
      •	CURSOR PRICE IN LOWER SECTION 
-            If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell middle AOP  target volatility 
+            If  RANGE > BALANCE PRICE                check if case 1 will happen if not sell middle AOP  target volatility
+            If  RANGE < BALANCE PRICE                check if case 2 will happen if not buy volatily price target middle AOP  
 
 
 HOW TO MANAGE RISK 
