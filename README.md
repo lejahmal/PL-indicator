@@ -52,39 +52,16 @@ Choose your execution method:
 
 ### Steps to Identify Entry Points
 
-1. **Get the cursor price** of your asset (SYMBOL $ CELL)
-2. **Find the price section** by locating your price in the matrix (SYMBOL $ CELL)
+1. **Get the cursor price** of your asset 
+2. **Find the price section** by locating your price in Orderbok (SYMBOL $ CELL)
 3. **Identify the range** – find the highest price (UPPER RANGE) and the lowest price (LOWER RANGE) after the PIVOT price (H10)
-4. **Compare to balance price** – check if the range is above or below the BALANCE PRICE
+4. **Compare to balance price** – check if the range is above or below or oscillates on either side of BALANCE PRICE
 
 ### Trading Rules by Position
 
 - THE RANGE IS CONTAINED IN A SINGLE SECTION
 
-**TREND USED TO BREAK AT BALANCE PRICE**
-
-     •	case 1 : If LOWER RANGE = BALANCE PRICE → Buy  BALANCE PRICE target RED PRICE
-     •	case 2 : If UPPER RANGE = BALANCE PRICE → Sell BALANCE PRICE target RED PRICE
-
-**CURSOR PRICE IN UPPER SECTION** 
-
-     •	RANGE > BALANCE PRICE : Check if Case 1 applies if not sell at volatility price target AOP 
-     •	RANGE < BALANCE PRICE : check if case 2 applies if not buy at AOP price target volatility   
-
-**CURSOR PRICE IN MIDDLE SECTION** 
-
-     •	RANGE > BALANCE PRICE : check if case 1 applies if not sell at AOP price target middle AOP 
-     •	RANGE < BALANCE PRICE : check if case 2 applies if not buy at middle AOP target  AOP price  
-
-**CURSOR PRICE IN LOWER SECTION**
-
-     •	RANGE > BALANCE PRICE : check if case 1 applies if not sell at middle AOP target volatility
-     •	RANGE < BALANCE PRICE : check if case 2 applies if not buy at volatily price target middle AOP  
-
-**PRICE OSCILLATES ON EITHER SIDE OF THE BALANCE PRICE**  
-
-     •	CLOSE PRICE > BALANCE PRICE : BUY at balance price target Upper Range price
-     •	CLOSE PRICE < BALANCE PRICE : SELL at balance price target Low Range price  
+- THE RANGE IS CONTAINED IN A MULTIPLES SECTIONS
 
 ---
 
