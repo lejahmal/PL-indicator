@@ -19,7 +19,7 @@ Choose your execution method:
 1. Manually adjust the LINE 2 PARAMS value
 2. Verify that MARKER equals PIVOT
 3. When Step 7 shows STATIC, the process is complete
-4. Note: An ERROR MARGIN of approximately 0.01 is acceptable for manual processes
+4. Note: An ERROR MARGIN of approximately 0.1 is acceptable for manual processes
 
 **Cursor Positioning:**
 - Move the $ symbol cursor along the vertical line to match the asset's current price on your study date
